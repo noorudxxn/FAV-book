@@ -14,6 +14,15 @@
     <p id="test 3"></p>
     <p id="test 4"></p>
     <p id="test 5"></p>
+    <p id="test 6"></p>
+    <p id="test 7"></p>
+    <p id="test 8"></p>
+    <p id="test 9"></p>
+    <p id="test0"></p>
+    <p id="test1"></p>
+    <p id="test2"></p>
+    <p id="test3"></p>
+    <p id="test4"></p>
     <script>
         var string = "this is a test subject"
         document.getElementById("test").innerHTML = string
@@ -22,23 +31,55 @@
         var y = "I would eat" + 2 + " egg"
         console.log(y)
         var Array  = ["apple","orange","grapes"]
-        document.getElementById("test 3").innerHTML = Array
+        document.getElementById("test 2").innerHTML = Array
         console.log(Array)
         var z = 2.33
-        document.getElementById("test 4").innerHTML = z
+        document.getElementById("test 3").innerHTML = z
         console.log(z)
         let isstudent = true;
-        document.getElementById("test 5").innerHTML = isstudent
+        document.getElementById("test 4").innerHTML = isstudent
         
         let name = prompt("Enter your name:")
         let DOB =  prompt("Enter your D.O.B:")
         let number = Number(prompt("Enter your number:"))
-        document.getElementById("test").innerHTML = "My name is : " + name
-        console.log("My name is : " , name);
-        document.getElementById("test 1").innerHTML = "My D.O.B is  : " + DOB
+        document.getElementById("test 5").innerHTML = "the  name is  " + name + " and he is a student.";
+        console.log("the name is  " , name ,"and he is a student");
+        document.getElementById("test 6").innerHTML = "My D.O.B is  : " + DOB
         console.log("My D.O.B is  : " , DOB);
-        document.getElementById("test 2").innerHTML = "My number is : " + number
+        document.getElementById("test 7").innerHTML = "My number is : " + number
         console.log("My number is : " , number);
-     </script>
+        let num1 = Number(prompt("enter the first number :" ));
+        document.getElementById("test 8").innerHTML = "the first number is :" + num1 ;
+        console.log("the first number is :", num1);
+        let num2 = Number(prompt("enter the second number :"));
+        document.getElementById("test 9").innerHTML = "the second number is :" + num2 ;
+        console.log("the second number is :", num2);
+        let sum = num1 + num2 ;
+        document.getElementById("test0").innerHTML = "the sum of the two numbers are" + sum ;
+        console.log("the sum of the two numbers are", sum) ;
+        let difference = num1 - num2 ;
+        let product = num1 * num2 ;
+        let divison = num1 / num2 ;
+        document.getElementById("test1").innerHTML = "the difference of the two numbers are" + difference ;
+        console.log("the difference of the two numbers are", difference);
+        document.getElementById("test2").innerHTML = "the product of the two numbers are" + product;
+        console.log("the product of the two numbers are" , product);
+        document.getElementById("test3").innerHTML = "the division of the two numbers are" + divison;
+        console.log("the division of the two numbers are",divison);
+        let choice = prompt("enter game or time:");
+        document.getElementById("test4").innerHTML = "the string is" + choice ;
+        if (choice === "game" ) 
+        {
+            document.getElementById("test4").innerHTML = "you selected game.";
+        } 
+        else if(choice === "time")
+        {
+            document.getElementById("test4").innerHTML = "you selected time.";    
+        }
+        else
+        {
+            document.getElementById("test4").innerHTML = "It is not game or time."
+        }
+    </script>
 </body>
 </html>
