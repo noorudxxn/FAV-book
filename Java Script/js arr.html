@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1>Intializing variable</h1>
+    <p>storing string in this and showing using getElementById</p>
+    <p id="test"></p>
+    <p id="test 1"></p>
+    <p id="test 2"></p>
+    <p id="test 3"></p>
+    <p id="test 4"></p>
+    <p id="test 5"></p>
+    <script>
+        var string = "this is a test subject"
+        document.getElementById("test").innerHTML = string
+        var x = 200
+        document.getElementById("test 1").innerHTML = x
+        var y = "I would eat" + 2 + " egg"
+        console.log(y)
+        var Array  = ["apple","orange","grapes"]
+        document.getElementById("test 3").innerHTML = Array
+        console.log(Array)
+        var z = 2.33
+        document.getElementById("test 4").innerHTML = z
+        console.log(z)
+        let isstudent = true;
+        document.getElementById("test 5").innerHTML = isstudent
+        
+        let name = prompt("Enter your name:")
+        let DOB =  prompt("Enter your D.O.B:")
+        let number = Number(prompt("Enter your number:"))
+        document.getElementById("test").innerHTML = "My name is : " + name
+        console.log("My name is : " , name);
+        document.getElementById("test 1").innerHTML = "My D.O.B is  : " + DOB
+        console.log("My D.O.B is  : " , DOB);
+        document.getElementById("test 2").innerHTML = "My number is : " + number
+        console.log("My number is : " , number);
+     </script>
+</body>
+</html>
