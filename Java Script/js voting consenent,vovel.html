@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting catogery, consonent or vovel, leap year </title>
+</head>
+<body>
+    <p id="test 9"></p>
+    <script>
+        let age = Number(prompt("enter the age :" ));
+            document.getElementById("test 9").innerHTML = "the  age is :" + age ;
+            console.log("the age is :", age);
+        if (age > "18") 
+            {
+                console.log("you are eligible to vote")    
+            } 
+        else 
+            {
+                console.log("you are not eligible to vote")    
+            }
+        let year = prompt("enter the year:");
+            console.log("the entered year is :" , year)
+        
+        if (year % 4 == 0 && year % 100 !== 0) 
+            {
+            console.log("it is a leap year");    
+            } 
+        else 
+             {
+            console.log("its not a leap year ")    
+            }
+        let string = prompt("enter a string"); 
+            console.log("the entered string value is", string);
+
+        if (string == "a" || string == "e" || string == "i" || string == "o" || string == "u") 
+        {
+             console.log("the string is a vowel"); 
+        } 
+        else 
+        {
+            console.log("it is a consonent"); 
+        }
+    </script>
+</body>
+</html>
