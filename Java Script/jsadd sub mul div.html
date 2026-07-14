@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add sub mul div </title>
+</head>
+<body>
+    <p id="test 7"></p>
+    <p id="test 8"></p>
+    <p id="test 9"></p>
+    <p id="test0"></p>
+    <p id="test1"></p>
+    <p id="test2"></p>
+    <p id="test3"></p>
+    <p id="test4"></p>
+    <script>
+        let num1 = Number(prompt("enter the first number :" ));
+        document.getElementById("test 8").innerHTML = "the first number is :" + num1 ;
+        console.log("the first number is :", num1);
+        let num2 = Number(prompt("enter the second number :"));
+        document.getElementById("test 9").innerHTML = "the second number is :" + num2 ;
+        console.log("the second number is :", num2);
+        let sum = num1 + num2 ;
+        document.getElementById("test0").innerHTML = "the sum of the two numbers are" + sum ;
+        console.log("the sum of the two numbers are", sum) ;
+        let difference = num1 - num2 ;
+        let product = num1 * num2 ;
+        let divison = num1 / num2 ;
+        document.getElementById("test1").innerHTML = "the difference of the two numbers are" + difference ;
+        console.log("the difference of the two numbers are", difference);
+        document.getElementById("test2").innerHTML = "the product of the two numbers are" + product;
+        console.log("the product of the two numbers are" , product);
+        document.getElementById("test3").innerHTML = "the division of the two numbers are" + divison;
+        console.log("the division of the two numbers are",divison);
+    </script>
+</body>
+</html>

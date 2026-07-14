@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+</head>
+<body>
+    <p id="test4"></p>
+    <script> 
+     let choice = prompt("enter game or time:");
+        document.getElementById("test4").innerHTML = "the string is" + choice ;
+        console.log( "user has entered", choice );
+        if (choice === "game" ) 
+        {
+            document.getElementById("test4").innerHTML = "you selected game.";
+            console.log("you have selected", choice );
+        } 
+        else if(choice === "time")
+        {
+            document.getElementById("test4").innerHTML = "you selected time.";    
+            console.log("you have selected" , choice );
+        }
+        else
+        {
+            document.getElementById("test4").innerHTML = "It is not game or time."
+            console.log("its not game or time.it is", choice );
+        }
+        </script>
+</body>
+</html>

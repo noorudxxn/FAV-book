@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pos&neg,traffic,odd or even</title>
+</head>
+<body>
+    <p id="test 8"></p>
+    <p id="test 9"></p>
+    <p id="test 2"></p> 
+    <script>
+        // postive or negative
+          let num1 = Number(prompt("enter the number :" ));
+        document.getElementById("test 8").innerHTML = "the  number is :" + num1 ;
+        console.log("the number is :", num1);
+        let age = Number(prompt("enter the number :" ));
+        document.getElementById("test 9").innerHTML = "the  age is :" + age ;
+        console.log("the age is :", age);
+      
+         if (num1 > 0 ) 
+            {
+                 console.log( num1 , "is a positive number") ;   
+            } 
+        else if (0 > num1) 
+            {
+                console.log( num1, "is a negative number") ;
+            }
+        else
+            {
+                console.log(num1, "is not positive nor negative");
+            }
+    //    traffic light
+            let
+         traffic = prompt("enter red or yellow or green");
+        console.log("the light is" , traffic );
+            if (traffic === "red") 
+                {
+                    console.log("stop");   
+                } 
+            else if (traffic === "yellow") 
+                {
+                    console.log("go slow");
+                }
+            else if (traffic === "green")
+                {
+                    console.log("go");
+                }
+        // odd or even
+        if (num1 % 2 == 0) 
+            {
+                console.log("it is a even number");
+            }
+        else 
+            {
+                console.log("it is an odd number ");
+            }
+    //  voting 
+        if (age > "18") 
+        {
+        console.log("you are eligible to vote")    
+        } 
+        else 
+        {
+        console.log("you are not eligible to vote")    
+        }
+    </script>
+</body>
+</html>
