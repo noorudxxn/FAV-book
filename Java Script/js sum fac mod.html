@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum factorial divisible</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("enter the first number: "));
+        let sum = 0 ;   
+            console.log("the first number is " , num);
+                for(let i=1;i<=num;i++)
+                    {
+                    sum = sum + i;
+                    }
+                    console.log(`the sum of the number is , ${sum}`);
+            for (let i = 1; i <= 50; i++) 
+                {
+                    if(i % 3 == 0 && i % 5 ==0)
+                        {
+                        console.log(i);
+                        }
+                
+                }
+        let num1 = Number(prompt("Enter a number:"));
+        let factorial = 1;
+        console.log("the number is",num1)
+            for (let i = 1; i <= num1; i++) 
+                {
+                factorial = factorial * i;
+                }
+                console.log("The factorial is:", factorial);
+    </script>
+</body>
+</html>
