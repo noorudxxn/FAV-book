@@ -6,41 +6,38 @@
     <title>Product Card</title>
     <style>
     body
-    {   align-items: center;
+    {   
+        display: flex;
+        justify-content: center;
         content: center;
-        border: 5px solid rebeccapurple;
-        margin: 45px;
-        width: auto;
-        padding: 50px;
-        border-radius: 50px;
-        text-align: center;
-     }
-     .outter
-     { 
-        text-align: center;
-        content: center;
-        padding: 35px;
         align-items: center;
-        width: 440px;
-        height: 45px;
+        margin: 0 ;       
+     }
+     .card
+     { 
+        width: 300px;
+        border: 3px solid rebeccapurple;
+        border-radius: 20px;
+        text-align: center;
+        content: center;
+        padding: 20px;
+        background: white;
      }
      img.big
      {
-        max-width: 100%; 
-        min-width: 200px;
-        align-items: center;
-        content: center;
-        padding: 35px;
-     }
+        width: 100%; 
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
     </style>
 </head>
 <body>
-    <div>
-        <div class="outter"></div>
-    <img class="big" src="https://media.gettyimages.com/id/1987795730/photo/sneakers-on-a-brown-background-concept-for-sneaker-and-casual.jpg?s=612x612&w=0&k=20&c=RJITVmIImtrSF_uouxR7hOwiZ6YIrO-XWieDwRelWIE=" alt="shoe image">
-    <h3>Casual sneakers</h3>
-    <p>Step into comfort and style with these classic casual sneakers, designed for everyday wear. Featuring a sleek white finish with subtle beige accents, these shoes offer a modern and versatile look that pairs effortlessly with jeans, shorts, or casual outfits. The lightweight construction, cushioned insole, and durable rubber outsole provide all-day comfort and reliable traction, making them ideal for daily activities, travel, or casual outings. Whether you're heading to work, meeting friends, or exploring the city, these sneakers deliver the perfect blend of fashion and functionality.</p>
-        </div>
+    <div class="card">
+        <img class="big" src="https://media.gettyimages.com/id/1987795730/photo/sneakers-on-a-brown-background-concept-for-sneaker-and-casual.jpg?s=612x612&w=0&k=20&c=RJITVmIImtrSF_uouxR7hOwiZ6YIrO-XWieDwRelWIE=" alt="shoe image">
+        <h3>Casual sneakers</h3>
+        <p>Step into comfort and style with these classic casual sneakers, designed for everyday wear. Featuring a sleek white finish with subtle beige accents, these shoes offer a modern and versatile look that pairs effortlessly with jeans, shorts, or casual outfits. The lightweight construction, cushioned insole, and durable rubber outsole provide all-day comfort and reliable traction, making them ideal for daily activities, travel, or casual outings. Whether you're heading to work, meeting friends, or exploring the city, these sneakers deliver the perfect blend of fashion and functionality.</p>
     </div>
+
 </body>
 </html>
