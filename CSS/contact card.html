@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact card</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 80px;
+        }
+        h1{
+            color: white;
+            background: #0d6efd ;
+            border: 5px solid black;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .profile{
+            width: 70%;
+            margin: 40px auto;
+            background: white;
+            border: 2px solid #ccc;
+            padding: 30px;
+            position: relative;
+            overflow: auto;
+            min-height: 250px;
+
+        }
+        .pro-img{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .emp-details{
+            margin-left: 180px;
+            margin-right: 280px;
+            text-align: center;
+            border-right: 4px solid gray;
+            background-color: antiquewhite;
+            padding-right: 20px;
+            overflow: auto;
+        }
+        .emp-details h3{
+            margin-bottom: 10px;
+        }
+        .emp-details h5{
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .emp-details p{
+            line-height: 1.6;
+        }
+        .coninfo{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 220px;
+            border: 2px solid #0d6efd;
+            padding: 15px;
+            text-align: center;
+            background: #eef5ff;
+        }
+        .coninfo h3 , p {
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Company contact Card</h1>
+    <div class="profile">
+        <img class="pro-img" src="https://www.profilepicture.ai/_next/image?url=/reviews/pfp_1.webp&w=256&q=75&dpl=dpl_HUDMycJLhC9yczSsutCAf17fCtz3" alt="profile picture">
+        <div class="emp-details">
+            <h3>Nimmy Jacob</h3>
+            <h5>software engineer</h5>
+            <p>Nimmy Jacob is  a skilled software engineer with over 5 years of
+                experience in web development. She specializes in HTML, CSS,
+                JavaScript, and backend technologies. Passionate about creating
+                user-friendly applications and solving real-world problems. </p>
+        </div>
+        <div class="coninfo">
+            <h3>Contact Info</h3>
+            <p><i><strong>Phone No : </strong><br> + 91-8086898581 </i></p>
+            <p><i><strong>Mail Id : </strong><br> nimmyjac145@gmail.com </i></p>
+        </div>
+     </div>
+</body>
+</html>
