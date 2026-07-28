@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .blog
+        {
+            width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: larger;
+        }
+        blockquote{
+            padding: 10px;
+            font-style: italic;
+        }
+        blockquote::before{
+            content: " ";
+            font-size: 30px;
+            color: red;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        h4{
+            display: inline-block;
+        }
+        h4 + h4{
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog">
+        <h1>The Importance of Reading Books</h1>
+        <h3>Author : nikil raj</h3>
+        <p>Reading books is one of the best habits a person can develop. Books provide knowledge, improve vocabulary, and help readers understand different cultures, ideas, and experiences. They also enhance imagination, creativity, and critical thinking skills. Whether it is fiction, science, history, or self-improvement, every book offers valuable lessons. Spending even a few minutes reading every day can reduce stress, improve concentration, and support lifelong learning. In today's digital world, reading remains an essential activity that helps individuals grow both personally and professionally.</p>
+        <blockquote>"Every page you read is a step toward a wiser future."</blockquote>
+        <a href="#">Read More</a><br>
+        <h4>Another Post 1</h4>
+        <h4>Another Post 2</h4>
+    </div>
+</body>
+</html>
