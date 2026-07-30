@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        height: 800px;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+      }
+      .left{
+        width: 50%;
+        background: linear-gradient(to bottom, #b9d7ff 0%, #ffffff 50%, #ffd6b8);
+      }
+      .right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+      }
+      .log-box{
+        width: 90%;
+        max-width: 650px;
+      }
+      h3{
+        color: orangered;
+        margin-bottom: 25px;
+        font-size: 30px;
+      }
+      label{
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      input[type=email],input[type=password]
+      {
+        width: 100%;
+        height: 50px;
+        padding: 12px;
+        margin-bottom: 18px;
+        border: 1px solid #ccc;
+      }
+      .remember
+      {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 20px;
+
+      }
+      button{
+        width: 100%;
+        height: 50px;
+        background: #d9785e;
+        color: white;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      button :hover{
+        background: #d9785e;
+      }
+      @media only screen and (max-width:500px)
+      {
+        .left{
+            display: none;
+        }
+        .right{
+            width: 100%;
+        }
+        .log-box{
+            width: 90%;
+            max-width: 450px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="left"></div>
+      <div class="right">
+        <div class="log-box">
+        <h3>Login Form</h2>
+        <form>
+          <label for="email">Email :</label>
+          <input type="email" id="email" />
+          <label for="pass">Password :</label>
+          <input type="password" id="pass" />
+          <div class="remember">
+            <input type="checkbox" />Remember Me</div>
+          <button>Login</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
