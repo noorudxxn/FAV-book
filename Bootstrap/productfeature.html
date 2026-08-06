@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Feature </title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .body{
+            background: #dcdfe2;
+        }
+        .card{
+            border-radius: 12px;
+        }
+        .card img{
+            height: 220px;
+            object-fit: contain;
+            padding: 15px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="card text-center p-4">
+            <h2 class="text-primary font-wieght-bold mb-4">OUR PRODUCTS</h2>
+            <p class="text-muted"> Explore our latest collection of premium electronic accessories.</p>
+            <div class="card-deck mt-4 mb-4">
+                
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-primary font-weight-bold">Mouse</div>
+                        <div class="card-body">
+                         <img src="https://m.media-amazon.com/images/I/516GF5kdCDL._SL1200_.jpg" alt="Mouse" class="img-fluid rounded mx-auto d-block">
+                         <p>High-precision wireless mouse designed for gaming, office work, and smooth everyday productivity.</p>
+                         <a href="#">Read more</a>
+                        <div class ="dropdown mt-3 mb-4">
+                            <button type="button" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Options</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item text-success" href="#">Add to Wishlist</a>
+                                <a class="dropdown-item text-primary" href="#">Compare</a>
+                                <a class="dropdown-item text-danger" href="#">Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header  text-primary font-weight-bold">Laptop</div>
+                        <div class="card-body">
+                        <img src="https://cdn.ratake.com/md5_b40e86038c1f896263f623595103ccb2.jpg" alt="Mouse" class="img-fluid rounded mx-auto d-block">
+                         <p>Powerful and lightweight laptop featuring fast performance, long battery life for work and entertainment.</p>
+                         <a href="#">Read more</a>
+                         <div class ="dropdown mt-3 mb-4">
+                            <button type="button" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Options</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item text-success" href="#">Add to Wishlist</a>
+                                    <a class="dropdown-item text-primary" href="#">Compare</a>
+                                    <a class="dropdown-item text-danger" href="#">Report</a>
+                                </div>
+                        </div>
+                        </div>
+                        
+                </div>
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-primary font-weight-bold">keyboard</div>
+                        <div class="card-body">
+                        <img src="https://massdrop-s3.imgix.net/product-images/drop-balance-dcx-bim-keycap-set/FP/KYNOsBpQgSabvZl1ius1_bNq9s5ZQHSlmqWNwIIMG_PC.png?auto=format&fm=jpg&fit=fill&w=360&h=360&bg=f0f0f0&fill=solid&fill-color=f0f0f0&dpr=2&q=35" alt="Mouse" class="img-fluid rounded mx-auto d-block">
+                        <p>Ergonomic mechanical keyboard with responsive keys, comfortable typing, and durable construction for everyday use.</p>
+                        <a href="#">Read more</a>
+                        <div class ="dropdown mt-3 mb-4">
+                            <button type="button" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Options</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item text-success" href="#">Add to Wishlist</a>
+                                    <a class="dropdown-item text-primary" href="#">Compare</a>
+                                    <a class="dropdown-item text-danger" href="#">Report</a>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <h3 class="text-primary mb-4">Frequently Asked Questions</h3>
+             <div id = "accordion" class="mb-4">
+                                    <div class = "card shadow-sm">
+                                    <div class = "card-header">
+                                        <a class = "card-link" data-toggle = "collapse" href = "#collapseOne">
+                                         How can I track my order?   
+                                        </a>
+                                    </div>
+                                    <div id = "collapseOne" class = "collapse show" data-parent = "#accordion">
+                                        <div class = "card-body">we provide tracking links through Gmail after the product is shipped.</div>
+                                    </div>
+                                    </div>
+                                    <div class = "card shadow-sm">
+                                    <div class = "card-header">
+                                        <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseTwo">
+                                            What is your return policy?
+                                        </a>
+                                    </div>
+                                    <div id = "collapseTwo" class = "collapse" data-parent = "#accordion">
+                                        <div class = "card-body">please read the Return/Exchange Policy.</div>
+                                    </div>
+                                    </div>
+                                    <div class = "card shadow-sm">
+                                    <div class = "card-header">
+                                        <a class = "collapsed card-link" data-toggle = "collapse" href = "#collapseThree">
+                                            How do I change or cancel my order?
+                                        </a>
+                                    </div>
+                                    <div id = "collapseThree" class = "collapse" data-parent = "#accordion">
+                                        <div class = "card-body"> Customer can change or cancel only 1 day after the product is purchased or before the product is shipped.</div>
+                                    </div>
+                                    </div>
+
+                         </div>
+        
+    </div>
+</body>
+</html>
