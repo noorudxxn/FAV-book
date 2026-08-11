@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>banner slide</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Explore the Destinations</h2>
+        <div id="demo1" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                <li data-target="#demo1" data-slide-to="1"></li>
+                <li data-target="#demo1" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                 <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                    alt="beach"
+                    class="d-block w-100"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white">Beaches</h1>
+                            <button
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#bookingmodal"
+                            >
+                             Book Now
+                            </button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+                        alt="Mountain"
+                        class="d-block w-100"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-white">Mountains</h1>
+                            <button
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#bookingmodal"
+                            >
+                            Book Now
+                            </button>
+                        </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+                    alt="Paris"
+                    class="d-block w-100"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white">Amazing cities</h1>
+                        <button
+                        class="btn btn-primary"
+                        data-toggle="modal"
+                        data-target="#bookingmodal"
+                        >
+                        Book Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+        </div>
+    </div>
+           
+           
+    <div class="modal fade"
+     id="bookingModal"
+     tabindex="-1"
+     role="dialog">
+
+        <div class="modal-dialog modal-dialog-centered"
+            role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Travel Booking
+                    </h5>
+
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal">
+
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <h5>Book Your Dream Vacation</h5>
+
+                    <p>
+                        Choose your favorite destination and enjoy
+                        our special travel packages.
+                    </p>
+
+                    <p>
+                        <strong>Special Offer:</strong>
+                        Up to 30% discount on selected packages.
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+
+                    <button type="button"
+                            class="btn btn-primary">
+                        Continue Booking
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
