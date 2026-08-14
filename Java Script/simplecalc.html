@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        let rice = "rice";
+        let sugar ="sugar";
+        let wheat = "wheat";
+        let riceprice = 50;
+        let sugarprice = 40;
+        let wheatprice = 60;
+        let ricequantity = 2;
+        let sugarquantity = 5;
+        let wheatquantity = 8;
+        let ricecost = (riceprice*ricequantity);
+        let sugarcost = (sugarprice*sugarquantity);
+        let wheatcost = (wheatprice*wheatquantity);
+        let totalbill = (ricecost)+(sugarcost)+(wheatcost);
+        console.log("the price of " + rice + " is : $" , riceprice);
+        console.log("the price of " + sugar + " is : $" , sugarprice);
+        console.log("the price of " + wheat + " is : $" , wheatprice);
+        console.log("the quantity of " + rice + " is : " , ricequantity);
+        console.log("the quantity of " + sugar + " is : " , sugarquantity);
+        console.log("the quantity of " + wheat + " is : " , wheatquantity);
+        console.log("the cost of rice is : $", ricecost);
+        console.log("the cost of sugar is : $", sugarcost);
+        console.log("the cost of wheat is : $", wheatcost);
+        console.log("the total bill amount is: $", totalbill);
+        sugarquantity = 3 ;
+        sugarcost = sugarprice * sugarquantity;
+        totalbill = ricecost + sugarcost + wheatcost;
+        console.log("the updated bill is : $",totalbill);
+    </script>
+</body>
+</html>
