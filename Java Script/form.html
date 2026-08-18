@@ -9,10 +9,14 @@
     <label for="">fullname</label>
     <input id="name" type="text" placeholder="enter your full name"><br>
    <button onclick="result()">submit</button>
+   <p id="test"></p>
    <script lang="javascript" type="text/javascript">
     function result()
     {
         console.log(document.getElementById("name").value)
+        document.getElementById("test").innerHTML = document.getElementById("name").value
+        document.getElementById("name").value = ""
+
     }
    </script>
 </body>

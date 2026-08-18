@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 input</title>
+</head>
+<body>
+    <label for="para">write</label>
+    <input type="text" id="para">
+    <label for="1index">start index</label>
+     <input type="text"  id="1index">
+     <label for="2index">end index</label>
+     <input type="text" id="2index">
+     <label for="search">Search Letter</label>
+    <input type="text" id="search">
+     <button onclick="slicevalue()">submit</button>
+     <p id="out"></p>
+     <p id="position"></p>
+     <script>
+        function slicevalue()
+        {
+        let written = document.getElementById("para").value  ;
+        let fisrtindex = document.getElementById("1index").value ;
+        let lastindex = document.getElementById("2index").value ;
+        let search = document.getElementById("search").value;
+        let printing = written.slice(fisrtindex,lastindex);
+        let index = written.indexof(search)
+        document.getElementById("out").innerHTML = printing
+        document.getElementById("position").innerHTML = "Index of '" + search +"':" + index;
+        }
+     </script>
+</body>
+</html>
