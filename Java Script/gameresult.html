@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Result Generator</title>
+</head>
+<body>
+   
+    <script>
+         var mysterylevel = Math.floor(Math.random()*50)+1;
+         var uscore = "45";
+         uscore = Number(uscore);
+         var difference = (mysterylevel - uscore);
+         console.log("mystery level: "+ mysterylevel);
+         console.log("user score: " + uscore);
+         console.log("diffence of the values are :" + difference);
+         var squareRoot = Math.sqrt(uscore);
+         console.log("square root of user score :" + squareRoot);
+         console.log("value of PI: "+ Math.PI);
+         var multiplication = "20 " * 5 ;
+         console.log("20 * 5 = " + multiplication);
+        var maxvalue = Math.max(10,20,mysterylevel);
+        console.log("the maximum of 10,20 and mystery level value is : " + maxvalue);
+        var minvalue = Math.min(10,20,mysterylevel);
+        console.log("the minmum of 10,20 and mystery level value is : " + minvalue);    
+    </script>
+
+</body>
+</html>
