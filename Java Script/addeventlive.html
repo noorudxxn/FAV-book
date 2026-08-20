@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event live</title>
+  </head>
+
+  <body>
+    <label>Lastname</label>
+
+    <input id="name1" type="text" placeholder="Enter your last name" />
+
+    <p id="test1"></p>
+
+    <script>
+      let input = document.getElementById("name1");
+
+      input.addEventListener("input", result1);
+
+      function result1() {
+        document.getElementById("test1").innerHTML = input.value;
+      }
+    </script>
+  </body>
+</html>

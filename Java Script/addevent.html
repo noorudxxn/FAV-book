@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <label for="">lastname</label>
+    <input id="name1" type="text" placeholder="enter your last name"><br>
+   <button id="click1">submit2</button>
+   <p id="test1"></p>
+
+<script lang="javascript" type="text/javascript">
+let btn = document.getElementById("click1")
+btn.addEventListener("click",result1)
+function result1()
+    {
+        console.log(document.getElementById("name1").value)
+        document.getElementById("test1").innerHTML = document.getElementById("name1").value
+        document.getElementById("name1").value = ""
+
+    }
+   </script>
+</body>
+</html>
