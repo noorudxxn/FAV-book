@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>staticis widget</title>
+</head>
+<body>
+    <p id="randomnum"></p>
+    <p id="userscore"></p>
+    <p id="score"></p>
+    <p id="difference"></p>
+    <p id="res"></p>
+    <p id="pi"></p>
+    <script>
+        var result = '50' * 2;
+          var uscore = "75" - 0 ;
+          var random =Math.floor(Math.random()*100)
+          var dif = random - uscore;
+        document.getElementById("randomnum").innerHTML = "Random number: " + random;
+        document.getElementById("userscore").innerHTML = "the type of the user score is " + typeof(uscore)
+        document.getElementById("score").innerHTML = "User score is: " + uscore
+            document.getElementById("res").innerHTML = result
+            document.getElementById("pi").innerHTML ="The PI value is: " +  Math.PI
+            document.getElementById("difference").innerHTML = "Difference is: " +  dif
+            console.log("The data type of result is "+typeof(result)); 
+    </script>
+</body>
+</html>
